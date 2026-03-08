@@ -1,63 +1,61 @@
-.food-item{
-    width: 100%;
-    margin: auto;
-    border-radius: 15px;
-    box-shadow: 0px 0px 10px #00000015;
-    transition: 0.3s;
-    animation: fadeIn 1s;
+.login-popup{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    display: grid; 
 }
-.food-item-image{
-    width: 100%;
-    border-radius: 15px 15px 0px 0px;
+.login-popup-container{
+    border: 1px solid tomato;
+    place-self: start center;
+    width:max(23vw,330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+
 }
-.food-item-info{
-    padding: 20px;
-}
-.food-item-name-rating{
+.login-popup-title{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
+    color: black;
 }
-.food-item-name-rating p{
-    font-size: 20px;
-    font-weight: 500;
-}
-.food-item-name-rating img{
-    width: 70px;
-}
-.food-item-desc{
-    color: #676767;
-    font-size: 12px;
-}
-.food-item-price{
-    color: tomato;
-    font-size: 22px;
-    font-weight: 500;
-    margin: 10px 0px;
-}
-.food-item-img-container{
-    position: relative;
-}
-.food-item-img-container .add{
-    position: absolute;
-    width:35px;
-    bottom: 15px;
-    right: 15px;
-    cursor: pointer;
-    border-radius: 50%;
-}
-.food-item-counter{
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
+.login-popup-inputs{
     display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 6px;
-    border-radius: 50px;
-    background-color: white;
+    flex-direction: column;
+    gap: 20px;
 }
-.food-item-counter img{
-    width: 30px;
+.login-popup-inputs input{
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+}
+.login-popup-container button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+@media (max-width:650px) {
+    .login-popup{
+        height: 100%;
+        margin: 50px auto;
+    }
+    .login-popup-container{
+        width: 100%;
+        padding: 25px 10px;
+    }
+    .login-popup-title{
+        justify-content: center;
+    }
 }
